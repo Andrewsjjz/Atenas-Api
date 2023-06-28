@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ejercicios",
+  "info": {
+    "singularName": "ejercicio",
+    "pluralName": "ejercicios",
+    "displayName": "ejercicios",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "richtext",
+      "required": true
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre",
+      "required": true
+    },
+    "ejemplo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
